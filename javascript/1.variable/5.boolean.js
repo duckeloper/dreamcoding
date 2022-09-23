@@ -26,3 +26,5 @@ console.log(!!-1);
 console.log(!!'text');
 console.log(!!{});
 console.log(!!Infinity);
+
+// MDN Boolean: https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Boolean
