@@ -32,4 +32,4 @@ console.log(obj1.name === obj2.name); // true
 
 let obj3 = obj2;
 
-console.log(obj3 == obj2);
+console.log(obj3 == obj2); // true
