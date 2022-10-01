@@ -14,10 +14,16 @@ display(value);
 console.log(value); // 4
 
 function displayObj(obj) {
-  obj.name = 'Bob';
+  obj.name = 'Bob'; // ❌
   console.log(obj);
 }
 
 const ellie = { name: 'Ellie' };
-displayObj(ellie);
-console.log(ellie);
+displayObj(ellie); // { name: 'Bob' }
+console.log(ellie); // { name: 'Bob' } 함수 외부에 선언된 객체가 변경됨
+
+// 함수 내부에서 객체를 변경하고 싶으면
+function changeName(obj) {
+  // 이름부터 변경하는 느낌을 주도록!
+  return { ...obj, name: 'Bob' }; // 반환할 때는 새로운 오브젝트 만들기!
+}
