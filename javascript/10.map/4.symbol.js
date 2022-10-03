@@ -23,4 +23,4 @@ console.log(Symbol.keyFor(key1)); // undefined 전역 심벌만 찾을 수 있�
 const obj = { [k1]: 'Hello', [Symbol('key')]: 1 };
 console.log(obj);
 console.log(obj[k1]);
-console.log(obj[Symbol('key')]);
+console.log(obj[Symbol('key')]); // undefined
